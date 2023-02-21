@@ -18,3 +18,267 @@ Migrating to CreateUsers (20230221184503)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2439013644524809380)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-02-21 16:28:01 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kevinchan/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kevinchan/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 526)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2808)
+
+
+Started GET "/users/new" for ::1 at 2023-02-21 16:28:24 -0500
+
+NoMethodError - undefined method `help_method' for ApplicationController:Class
+    help_method :current_user, :logged_in?
+    ^^^^^^^^^^^
+Did you mean?  helper_method:
+  app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/3f3f53ea7450f0a2/variables" for ::1 at 2023-02-21 16:28:24 -0500
+Started GET "/users/new" for ::1 at 2023-02-21 16:28:53 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 330)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 6949)
+Completed 200 OK in 25ms (Views: 15.6ms | ActiveRecord: 4.7ms | Allocations: 14773)
+
+
+Started GET "/" for ::1 at 2023-02-21 16:58:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kevinchan/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kevinchan/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 526)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2809)
+
+
+Started GET "/users/new" for ::1 at 2023-02-21 16:58:37 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 252)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3813)
+Completed 200 OK in 51ms (Views: 13.6ms | ActiveRecord: 6.3ms | Allocations: 10182)
+
+
+Started POST "/users" for ::1 at 2023-02-21 16:58:40 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{":username"=>""}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 756)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/04f849e57a3f4d59/variables" for ::1 at 2023-02-21 16:58:40 -0500
+Started GET "/users/new" for ::1 at 2023-02-21 17:00:16 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 4075)
+Completed 200 OK in 23ms (Views: 12.4ms | ActiveRecord: 6.2ms | Allocations: 11900)
+
+
+Started GET "/users/new" for ::1 at 2023-02-21 17:00:17 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 1223)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 1499)
+
+
+Started POST "/users" for ::1 at 2023-02-21 17:00:24 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{":username"=>"", ":password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms | Allocations: 756)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/81483dc1336369ce/variables" for ::1 at 2023-02-21 17:00:24 -0500
+Started GET "/users/new" for ::1 at 2023-02-21 17:15:36 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4065)
+Completed 200 OK in 22ms (Views: 11.8ms | ActiveRecord: 5.6ms | Allocations: 11890)
+
+
+Started POST "/users" for ::1 at 2023-02-21 17:15:37 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{":username"=>"", ":password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 757)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/058881a9000bf0c0/variables" for ::1 at 2023-02-21 17:15:38 -0500
+Started POST "/users" for ::1 at 2023-02-21 17:17:51 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{":username"=>"", ":password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+[31mUnpermitted parameters: ::username, ::password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00000001091573e0>, params: {"user"=>{":username"=>"", ":password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:33:in `generate_unique_session_token'
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33:in `generate_unique_session_token'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 8.6ms | Allocations: 14230)
+
+
+
+NoMethodError - undefined method `new' for #<ActionDispatch::Flash::FlashHash:0x000000010a1e7160 @discard=#<Set: {}>, @flashes={}, @now=nil>
+            flash.new[:error] = @user.errors.full_messages
+                 ^^^^
+Did you mean?  now:
+  app/controllers/users_controller.rb:15:in `create'
+
+Started POST "/__better_errors/be63068d42fe6af0/variables" for ::1 at 2023-02-21 17:17:52 -0500
+Started GET "/users/new" for ::1 at 2023-02-21 17:19:55 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 957)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4048)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 4.5ms | Allocations: 9060)
+
+
+Started GET "/users/new" for ::1 at 2023-02-21 17:20:06 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 998)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4108)
+Completed 200 OK in 20ms (Views: 11.3ms | ActiveRecord: 5.0ms | Allocations: 11933)
+
+
+Started POST "/users" for ::1 at 2023-02-21 17:20:07 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{":username"=>"", ":password"=>"[FILTERED]"}}
+[31mUnpermitted parameters: ::username, ::password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000104fd4c88>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{":username"=>"", ":password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:33:in `generate_unique_session_token'
+  [1m[36mUser Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33:in `generate_unique_session_token'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 2.7ms | Allocations: 8908)
+
+
+
+NoMethodError - undefined method `new' for #<ActionDispatch::Flash::FlashHash:0x000000010558fa38 @discard=#<Set: {}>, @flashes={}, @now=nil>
+            flash.new[:error] = @user.errors.full_messages
+                 ^^^^
+Did you mean?  now:
+  app/controllers/users_controller.rb:15:in `create'
+
+Started POST "/__better_errors/4730d853adc32e95/variables" for ::1 at 2023-02-21 17:20:07 -0500
+Started POST "/users" for ::1 at 2023-02-21 17:21:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{":username"=>"", ":password"=>"[FILTERED]"}}
+[31mUnpermitted parameters: ::username, ::password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000111e20790>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{":username"=>"", ":password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:33:in `generate_unique_session_token'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33:in `generate_unique_session_token'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 521)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 3611)
+Completed 200 OK in 27ms (Views: 5.5ms | ActiveRecord: 6.0ms | Allocations: 21544)
+
+
+Started POST "/users" for ::1 at 2023-02-21 17:21:49 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{":username"=>"", ":password"=>"[FILTERED]"}}
+[31mUnpermitted parameters: ::username, ::password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000112746590>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{":username"=>"", ":password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:33:in `generate_unique_session_token'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33:in `generate_unique_session_token'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 228)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1505)
+Completed 200 OK in 29ms (Views: 5.9ms | ActiveRecord: 2.5ms | Allocations: 7218)
+
+
+Started POST "/users" for ::1 at 2023-02-21 17:21:50 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{":username"=>"", ":password"=>"[FILTERED]"}}
+[31mUnpermitted parameters: ::username, ::password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000113156058>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{":username"=>"", ":password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:33:in `generate_unique_session_token'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33:in `generate_unique_session_token'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 998)
+Completed 200 OK in 21ms (Views: 3.3ms | ActiveRecord: 1.9ms | Allocations: 6211)
+
+
+Started POST "/users" for ::1 at 2023-02-21 17:22:12 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{":username"=>"jevinvwn@mgao.com", ":password"=>"[FILTERED]"}}
+[31mUnpermitted parameters: ::username, ::password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00000001137ffe68>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{":username"=>"jevinvwn@mgao.com", ":password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:33:in `generate_unique_session_token'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33:in `generate_unique_session_token'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 998)
+Completed 200 OK in 44ms (Views: 23.8ms | ActiveRecord: 2.0ms | Allocations: 5967)
+
+

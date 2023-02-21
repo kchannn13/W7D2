@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
             redirect_to user_url(@user.id)
             flash[:messages] = ["Successfully Login!"]
         else
-            flash.new[:error] = @user.errors.full_messages
+            flash.now[:error] = @user.errors.full_messages
             render :new
         end
     end
